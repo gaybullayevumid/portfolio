@@ -124,6 +124,28 @@ export default function Projects() {
             <button>view-project</button>
           </div>
         </div>
+
+        <div className="project-main">
+          <p className="title-p">
+            <span>Project 1</span> // _ui-animations
+          </p>
+          <div className="cards">
+            <img src={"/public/project.png"} alt="" />
+            <p>Duis aute irure dolor in velit esse cillum dolore.</p>
+            <button>view-project</button>
+          </div>
+        </div>
+
+        <div className="project-main">
+          <p className="title-p">
+            <span>Project 1</span> // _ui-animations
+          </p>
+          <div className="cards">
+            <img src={"/public/project.png"} alt="" />
+            <p>Duis aute irure dolor in velit esse cillum dolore.</p>
+            <button>view-project</button>
+          </div>
+        </div>
       </div>
     </div>
   )
