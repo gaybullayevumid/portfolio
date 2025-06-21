@@ -1,4 +1,4 @@
-/* Katta ekranlar uchun */
+/* ======= Asosiy Home stili (katta ekranlar uchun) ======= */
 .home {
     width: 100%;
     min-height: 84vh;
@@ -8,6 +8,7 @@
     gap: 40px;
     padding: 60px 80px;
     box-sizing: border-box;
+    background: transparent;
 }
 
 .text {
@@ -50,20 +51,22 @@ p {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 32px 0 rgba(77,91,206,0.08);
+    background: #222;
 }
 
+/* ======= home-mobile avval yashirin ======= */
 .home-mobile {
     display: none;
 }
 
-/* Mobil uchun (700px dan kichik) */
+/* ======= Mobil uchun (700px dan kichik) ======= */
 @media (max-width: 700px) {
     html, body {
         overflow-x: hidden;
-    }
-    body {
         margin: 0;
         padding: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
     .home {
         display: none;
@@ -73,8 +76,7 @@ p {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        /* chetlardan joy qoldirish uchun paddingni oshirdik */
-        padding: 24px 18px;
+        padding: 24px 16px; /* chetlardan joy qoldiradi */
         width: 100%;
         max-width: 100%;
         min-height: 100vh;
@@ -117,7 +119,7 @@ p {
     }
     .home-mobile .game img {
         width: 100%;
-        max-width: 340px;
+        max-width: 320px;
         border-radius: 10px;
         box-shadow: 0 2px 16px 0 rgba(77,91,206,0.10);
         display: block;
@@ -125,7 +127,7 @@ p {
     }
 }
 
-/* Planshet: 701px - 1199px */
+/* ======= Planshet: 701px - 1199px ======= */
 @media (min-width: 701px) and (max-width: 1199px) {
     .home {
         padding: 30px 16px;
@@ -145,7 +147,7 @@ p {
     }
 }
 
-/* Katta ekranlar */
+/* ======= Katta ekranlar (1200px dan katta) ======= */
 @media (min-width: 1200px) {
     .home {
         gap: 60px;
