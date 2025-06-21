@@ -47,10 +47,8 @@ export default function Header() {
                 </button>
             </div>
 
-            {/* Mobile Menu Overlay */}
             <div className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
 
-            {/* Mobile Menu */}
             <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
                     <li>

@@ -65,7 +65,6 @@
     border-color: #FEA55F;
 }
 
-/* Mobile Navbar */
 .mobile-navbar {
     display: none;
     width: 100%;
@@ -94,7 +93,6 @@
     fill: #fff;
 }
 
-/* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
     top: 0;
@@ -113,7 +111,6 @@
     visibility: visible;
 }
 
-/* Mobile Menu */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -155,7 +152,6 @@
     background-color: #1E2D3D;
 }
 
-/* Media Queries - Simplified */
 @media screen and (max-width: 1199px) {
     .navbar {
         display: none;
@@ -166,7 +162,6 @@
     }
 }
 
-/* Prevent scrolling when menu is open */
 body.menu-open {
     overflow: hidden;
 }
