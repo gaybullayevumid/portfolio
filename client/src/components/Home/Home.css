@@ -1,174 +1,165 @@
+/* Katta ekranlar uchun */
 .home {
     width: 100%;
-    height: 84vh;
+    min-height: 84vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 60px 80px;
+    box-sizing: border-box;
 }
 
-.home-mobile {
-    display: none;
+.text {
+    max-width: 520px;
 }
 
 h5 {
     color: #E5E9F0;
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 8px;
 }
 
 h1 {
     color: #E5E9F0;
-    font-weight: 400;
-    font-size: 62px;
+    font-weight: 600;
+    font-size: 54px;
+    margin: 0 0 12px 0;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
 }
 
 h3 {
     color: #4D5BCE;
-    font-weight: 450;
-    font-size: 32px;
-    margin: 0 0 50px 0;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0 0 32px 0;
 }
 
 p {
     color: #607B96;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0 0 6px 0;
 }
 
-.cm-scroller {
-    font-size: 13px;
+.game img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px 0 rgba(77,91,206,0.08);
 }
 
-@media screen and (max-width: 566px) {
+.home-mobile {
+    display: none;
+}
+
+/* Mobil uchun (700px dan kichik) */
+@media (max-width: 700px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
     .home {
         display: none;
     }
-
     .home-mobile {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
-        padding: 40px;
+        padding: 24px 10px;
         width: 100%;
-        height: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        box-sizing: border-box;
+        background: transparent;
+        overflow-x: hidden;
     }
-
+    .home-mobile h5 {
+        color: #E5E9F0;
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
     .home-mobile h1 {
-        line-height: 1.4;
-        font-size: 60px;
-    }
-
-    .home-mobile h3 {
-        font-size: 20px;
-        color: #43d9ad;
-        margin-bottom: 300px;
-    }
-
-    .home-mobile p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 566px) {
-
-    .home {
-        display: none;
-    }
-
-    .home-mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        padding: 40px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .home-mobile h1 {
-        line-height: 1.2;
-        font-size: 60px;
-    }
-
-    .home-mobile h3 {
-        font-size: 25px;
-        color: #43d9ad;
-        margin-bottom: 300px;
-    }
-
-    .home-mobile p {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 991px) and (min-width: 767px) {
-    .home {
-        display: none;
-    }
-
-    .home-mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        padding: 40px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .home-mobile h1 {
-        line-height: 1.2;
-        font-size: 60px;
-    }
-
-    .home-mobile h3 {
         font-size: 30px;
-        color: #43d9ad;
-        margin-bottom: 300px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        letter-spacing: -1px;
+        line-height: 1.15;
+        word-break: break-word;
     }
-
+    .home-mobile h3 {
+        font-size: 14px;
+        color: #43d9ad;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
     .home-mobile p {
-        font-size: 20px;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+        word-break: break-word;
+    }
+    .home-mobile .game {
+        width: 100%;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .home-mobile .game img {
+        width: 100%;
+        max-width: 340px;
+        border-radius: 10px;
+        box-shadow: 0 2px 16px 0 rgba(77,91,206,0.10);
+        display: block;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 991px) {
+/* Planshet: 701px - 1199px */
+@media (min-width: 701px) and (max-width: 1199px) {
     .home {
+        padding: 30px 16px;
+        gap: 24px;
+    }
+    .home .text h1 {
+        font-size: 40px;
+    }
+    .home .text h3 {
+        font-size: 22px;
+    }
+    .game img {
+        max-width: 260px;
+    }
+    .home-mobile {
         display: none;
     }
-
-    .home-mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        padding: 50px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .home-mobile h1 {
-        line-height: 1.9;
-        font-size: 70px;
-    }
-
-    .home-mobile h3 {
-        font-size: 25px;
-        color: #43d9ad;
-        margin-bottom: 300px;
-    }
-
-    .home-mobile p {
-        font-size: 18px;
-    }
 }
 
-@media screen and (min-width: 1200px){
-    .home{
-        width: 100%;
-        height: 100%;
-        padding: 70px;
+/* Katta ekranlar */
+@media (min-width: 1200px) {
+    .home {
+        gap: 60px;
+        padding: 70px 140px;
+    }
+    .home .text h1 {
+        font-size: 62px;
+    }
+    .home .text h3 {
+        font-size: 32px;
+    }
+    .game img {
+        max-width: 400px;
+    }
+    .home-mobile {
+        display: none;
     }
 }
