@@ -73,7 +73,8 @@ p {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding: 24px 10px;
+        /* chetlardan joy qoldirish uchun paddingni oshirdik */
+        padding: 24px 18px;
         width: 100%;
         max-width: 100%;
         min-height: 100vh;
