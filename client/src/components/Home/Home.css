@@ -1,4 +1,4 @@
-/* ======= Asosiy Home stili (katta ekranlar uchun) ======= */
+/* =================== Asosiy Home stili =================== */
 .home {
     width: 100%;
     min-height: 84vh;
@@ -13,6 +13,14 @@
 
 .text {
     max-width: 520px;
+}
+
+h5, h1, h3, p, pre, code, .cm-scroller {
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    box-sizing: border-box;
 }
 
 h5 {
@@ -45,6 +53,10 @@ p {
     margin: 0 0 6px 0;
 }
 
+.cm-scroller {
+    font-size: 13px;
+}
+
 .game img {
     max-width: 320px;
     width: 100%;
@@ -52,14 +64,13 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 32px 0 rgba(77,91,206,0.08);
     background: #222;
+    display: block;
 }
 
-/* ======= home-mobile avval yashirin ======= */
 .home-mobile {
     display: none;
 }
 
-/* ======= Mobil uchun (700px dan kichik) ======= */
 @media (max-width: 700px) {
     html, body {
         overflow-x: hidden;
@@ -67,6 +78,8 @@ p {
         padding: 0;
         width: 100%;
         box-sizing: border-box;
+        height: 100%;
+        min-height: 100vh;
     }
     .home {
         display: none;
@@ -74,44 +87,71 @@ p {
     .home-mobile {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 24px 16px; /* chetlardan joy qoldiradi */
-        width: 100%;
-        max-width: 100%;
+        align-items: flex-start;         /* chapga yaqin joylashadi */
+        justify-content: center;         /* vertikal markazda */
+        padding: 0 14px;
+        width: 100vw;
         min-height: 100vh;
         box-sizing: border-box;
         background: transparent;
         overflow-x: hidden;
+        position: relative;
+    }
+    .home-mobile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;         /* chapga yaqin joylashadi */
+        justify-content: center;
+        padding: 32px 20px 28px 28px;    /* chapdan ko'proq joy */
+        background: rgba(18,32,47,0.94);
+        border-radius: 12px;
+        box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+        max-width: 360px;
+        width: 95%;
+        margin-left: 18vw;               /* chapdan joy, markazroqqa */
+        margin-right: auto;
+        margin-top: 18vh;
+        margin-bottom: auto;
+    }
+    .home-mobile h5,
+    .home-mobile h1,
+    .home-mobile h3,
+    .home-mobile p,
+    .home-mobile pre,
+    .home-mobile code,
+    .home-mobile .cm-scroller {
+        max-width: 100%;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        white-space: pre-wrap;
+        box-sizing: border-box;
     }
     .home-mobile h5 {
         color: #E5E9F0;
-        font-size: 17px;
+        font-size: 16px;
         margin-bottom: 6px;
     }
     .home-mobile h1 {
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 600;
         margin-bottom: 8px;
         letter-spacing: -1px;
-        line-height: 1.15;
-        word-break: break-word;
+        line-height: 1.18;
     }
     .home-mobile h3 {
-        font-size: 14px;
+        font-size: 13px;
         color: #43d9ad;
         font-weight: 500;
-        margin-bottom: 18px;
+        margin-bottom: 14px;
     }
     .home-mobile p {
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 12px;
+        line-height: 1.35;
         margin-bottom: 6px;
-        word-break: break-word;
     }
     .home-mobile .game {
         width: 100%;
-        margin: 20px 0 0 0;
+        margin: 18px 0 0 0;
         display: flex;
         justify-content: center;
         box-sizing: border-box;
@@ -127,7 +167,7 @@ p {
     }
 }
 
-/* ======= Planshet: 701px - 1199px ======= */
+/* =========== Planshet: 701px - 1199px =========== */
 @media (min-width: 701px) and (max-width: 1199px) {
     .home {
         padding: 30px 16px;
@@ -147,7 +187,7 @@ p {
     }
 }
 
-/* ======= Katta ekranlar (1200px dan katta) ======= */
+/* =========== Katta ekranlar (1200px dan katta) =========== */
 @media (min-width: 1200px) {
     .home {
         gap: 60px;
