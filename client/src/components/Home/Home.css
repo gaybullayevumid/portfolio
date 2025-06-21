@@ -71,15 +71,16 @@ p {
     display: none;
 }
 
+/* =========== Mobil uchun (700px dan kichik) =========== */
 @media (max-width: 700px) {
     html, body {
         overflow-x: hidden;
         margin: 0;
         padding: 0;
         width: 100%;
-        box-sizing: border-box;
         height: 100%;
         min-height: 100vh;
+        box-sizing: border-box;
     }
     .home {
         display: none;
@@ -92,15 +93,17 @@ p {
         padding: 0 14px;
         width: 100vw;
         min-height: 100vh;
+        height: 100vh;
         box-sizing: border-box;
         background: transparent;
         overflow-x: hidden;
+        overflow-y: auto;
         position: relative;
     }
     .home-mobile-content {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;         /* chapga yaqin joylashadi */
+        align-items: flex-start;
         justify-content: center;
         padding: 32px 20px 28px 28px;    /* chapdan ko'proq joy */
         background: rgba(18,32,47,0.94);
@@ -108,10 +111,12 @@ p {
         box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
         max-width: 360px;
         width: 95%;
-        margin-left: 18vw;               /* chapdan joy, markazroqqa */
+        margin-left: 18vw;
         margin-right: auto;
         margin-top: 18vh;
         margin-bottom: auto;
+        max-height: 90vh;
+        overflow-y: auto;
     }
     .home-mobile h5,
     .home-mobile h1,
